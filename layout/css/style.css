@@ -1,0 +1,389 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'),
+    url('../fonts/Roboto.woff2') format('woff2'),
+    url('../fonts/Roboto.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Bold'),
+    url('../fonts/RobotoBold.woff2') format('woff2'),
+    url('../fonts/RobotoBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-fluid {
+  max-width: 1140px;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+:root {
+  --darkblue-color: #3F2AFF;
+  --white-color: #ffffff;
+  --darkpearpol-color: #2E2B44;
+  --gray-color: #666666;
+  --darktheme-color: #212133;
+  --graypearpul-color: #85859B;
+  --gray-color: #666666;
+  --whiteother-color: #EDF0F9;
+}
+
+/*header*/
+header {
+  background-color: var(--darkblue-color);
+}
+
+.header__nav {
+  padding-top: 29px;
+  padding-bottom: 26px;
+  padding-left: 15px;
+}
+
+
+.nav__logo {
+  display: inline-block;
+  max-width: 98px;
+  height: 21px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 56px;
+  margin-left: auto;
+}
+
+.nav__item {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+}
+
+
+/*hero*/
+.hero {
+  background: radial-gradient(rgba(85, 86, 129, 1), rgba(33, 33, 51, 1));
+  margin-bottom: 77px;
+
+}
+
+.hero__container {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: right 18px top 18px;
+}
+
+.hero__content {
+  padding-top: 135px;
+  padding-bottom: 130px;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--white-color);
+  margin-bottom: 28px;
+}
+
+.hero__descr {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--white-color);
+  margin-bottom: 62px;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 24px 75.5px 24px 75.5px;
+  border-radius: 20px;
+  background-color: var(--darkblue-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  color: var(--white-color)
+}
+
+/*four-us*/
+.four-us__container {
+  margin-bottom: 80px;
+}
+
+.four-us__text {
+  margin-bottom: 21px;
+}
+
+.four-us__picture {
+  padding-top: 25px;
+}
+
+.four-us__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: var(--darkpearpol-color);
+  margin-bottom: 20px;
+}
+
+.four-us__descr {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.four-us__list {
+  padding-left: 0;
+}
+
+.four-us__item {
+  margin: 0;
+  display: flex;
+}
+
+.four-us__svg {
+  margin: 0;
+  margin-right: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+.four-us__descr-block {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: var(--gray-color);
+  padding-top: 12px;
+}
+
+/*teacher*/
+.teacher {
+  padding: 76px 0;
+  background-color: var(--darktheme-color);
+  margin-bottom: 72px;
+}
+
+.teacher__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: var(--white-color);
+  margin-bottom: 23px;
+}
+
+.teacher__list {
+  padding-left: 0;
+}
+
+.teacher__item {
+  min-height: 255px;
+}
+
+.teacher__item img {
+  margin-bottom: 28px;
+  width: 100%;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.teacher__name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  color: var(--white-color);
+  margin-bottom: 8px;
+}
+
+.teacher__descr {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--graypearpul-color)
+}
+
+/*leason*/
+.courses {
+  margin-bottom: 80px;
+}
+
+.courses__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.courses__list {
+  row-gap: 30px;
+  padding-left: 0;
+}
+
+.courses__items {
+  display: flex;
+  min-height: 480PX;
+}
+
+.courses__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--whiteother-color);
+  border-radius: 0 0 20px 20px;
+  height: 100%;
+}
+
+.courses__item-img {
+  position: relative;
+}
+
+.courses__img {
+  width: 100%;
+}
+
+.courses__block {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  background-image: url(../img/mdi_access_time.svg);
+  background-position: 1px -4px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 95px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: right;
+  color: var(--white-color);
+}
+
+.courses__consul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 27px 30px 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.courses__title3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  color: var(--darktheme-color);
+  margin-bottom: 7px;
+}
+
+.courses__descr {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--gray-color);
+  margin-bottom: 20px;
+}
+
+.courses__link {
+  display: inline-block;
+  margin-top: auto;
+  background-color: var(--darkblue-color);
+  padding: 20.5px 59px;
+  border-radius: 20px;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: center;
+  max-width: 202PX;
+}
+
+/*footer*/
+.footer {
+  text-align: center
+}
+
+.footer__list {
+  background-color: var(--darkpearpol-color);
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+  gap: 30px;
+}
+
+.footer__logo {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  padding: 0;
+}
+
+.reg {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  color: #3F2AFF;
+  top: 1px;
+}

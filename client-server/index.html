@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список студентов</title>
+  <link rel="stylesheet"  href="css/bootstrap.min.css">
+  <script defer src="./js/main.js">
+
+  </script>
+
+
+</head>
+
+<body>
+  <div class="container students__container pt-1 pd-4" id="students__container0">
+    <form action="" id="filterform" class="students__for">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inp-name0" placeholder="First name">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inp-name1" placeholder="Last name">
+      </div>
+      <div>
+        <input type="text" class="form-control" id="inp-middle-name" placeholder="Middle name">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inp-date-of-birth" placeholder="date of birth">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inp-start-year" placeholder="Start year">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="inp-faculty" placeholder="Faculty">
+      </div>
+      <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+  </div>
+
+  <div class="container students__container" id="students__container">
+    <form action="" class="students__form md-4" id="studentsform">
+      <div class="mb-3">
+        <input type="text" class="students__info form-control" id="students1" placeholder="Введите ФИО">
+      </div>
+      <div class="mb-3">
+        <input type="date" value="2000-01-01" min="1900-01-01" max="2024-12-31" name="trip-start"
+          class="students__info form-control" id="students2">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="students__info form-control" id="students4" placeholder="Введите факультет">
+      </div>
+      <div class="mb-3">
+        <input type="number" min="2000" max="2024" name="trip-start" class="students__info form-control" id="students3"
+          placeholder="Введите год начала обучения">
+      </div>
+      <div class="students__button" id="studentbutton">
+        <button type="submit" class="student__add btn btn-primary" id="studentadd">Добать нового студента</button>
+      </div>
+    </form>
+    <div class="list__students" id="liststudents">
+      <table class="students__table table table-striped" id="studentstable">
+        <thead class="thead__studets" id="theadstudets">
+          <tr class="students__item" id="studentsitemelements">
+            <th>ФИО</th>
+            <th>Дата рождения</th>
+            <th>Год начала обучения</th>
+            <th>Факультет</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="students__table-body" id="students__table-body">
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

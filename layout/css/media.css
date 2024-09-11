@@ -1,0 +1,253 @@
+/*width 768px*/
+@media(max-width: 1000px) {
+  .hero__container {
+    background-image: url(../img/heroimg.png);
+  }
+
+}
+
+/*width 576px*/
+@media(max-width: 788px) {
+
+  /*nav*/
+  .header__nav {
+    padding-left: 40px;
+    padding-top: 29px;
+    padding-bottom: 0;
+  }
+
+  .nav__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .nav__list {
+    justify-content: center;
+  }
+
+  /*hero*/
+  .hero {
+    margin-bottom: 80px;
+  }
+
+  .hero__container {
+    background-image: none;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .hero__content {
+    padding-top: 130px;
+    padding-bottom: 135px;
+    padding-left: 25px;
+  }
+
+
+  /*four-us*/
+  .four-us__item {
+    flex-direction: column;
+  }
+
+  .four-us__block {
+    padding-left: 0;
+  }
+
+  .four-us__block:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .four-us__consul::after {
+    background-image: url(../img/four-us535px.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .four-us__title {
+    padding: 0;
+  }
+
+  .four-us__list {
+    padding-left: 0;
+  }
+
+  /*teacher*/
+  .teacher__item img {
+    border-radius: 51px 51px 0 0;
+  }
+
+
+  /*courses*/
+  .courses__consul {
+    padding: 30px 15.17px 30px 30.83px;
+  }
+
+}
+
+
+/*width 320px*/
+@media(max-width: 450px) {
+  .nav__list {
+    margin: 0;
+    overflow-y: scroll;
+    padding-left: 190px;
+  }
+
+  .header__nav {
+    justify-content: center;
+    padding: 20px 0 26px;
+  }
+
+  /*hero*/
+  .hero {
+    margin-bottom: 50px;
+  }
+
+
+  .hero__content {
+    padding: 50px 0 50px 0;
+  }
+
+  .hero__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+
+  .hero__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    margin-bottom: 46px;
+    width: 100%;
+  }
+
+  .hero__btn {
+    padding: 20.5px 53.5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+  }
+
+
+  /*four-us*/
+  br {
+    display: none;
+  }
+
+
+  .four-us__picture {
+    display: none;
+  }
+
+  .four-us__container {
+    margin-bottom: 50px;
+  }
+
+  .four-us__text {
+    margin-bottom: 25px;
+  }
+
+  .four-us__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 1px;
+  }
+
+  .four-us__list {
+    padding: 0;
+    row-gap: 29px;
+  }
+
+  .four-us__item {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .four-us__descr-block {
+    padding: 0;
+  }
+
+  /*teacher*/
+  .teacher {
+    padding: 48px 0;
+    margin-bottom: 48px;
+  }
+
+  .teacher__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 26px;
+    padding: 0;
+  }
+
+  .teacher__list {
+    row-gap: 20px;
+  }
+
+  .teacher__item {
+    height: 100%;
+  }
+
+  .teacher__item img {
+    border-radius: 22px 22px 0px 0px;
+  }
+
+  /*courses*/
+  .courses {
+    margin-bottom: 50px;
+  }
+
+  .courses__list {
+    padding: 0;
+  }
+
+  .courses__item img {
+    height: 180px;
+    width: 100%;
+  }
+
+  .courses__items {
+    min-height: 653px
+  }
+
+  .courses__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .courses__title3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.4px;
+    margin-bottom: 7px;
+    padding-right: 40px;
+  }
+
+  .courses__descr {
+    padding-right: 12px;
+  }
+
+  .courses__link {
+    width: 195px;
+    padding: 20.5px 55.5px;
+  }
+
+  .courses__block {
+    top: 13px;
+    right: 26px;
+  }
+
+}
